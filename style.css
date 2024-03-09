@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: 16px;
+    background-color: #101720;
+}
+
+h1 {
+    font-size: 5rem;
+    color: #c1cce4;
+    text-shadow: 2px 2px 1px #222222;
+    font-family: 'Metal Mania', system-ui;
+    letter-spacing: 0.4rem;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    margin-top: 35px;
+}
+
+kbd {
+    color: white;
+}
+
+.drum-item p {
+    color: rgb(231, 231, 231);
+    font-family: 'RocknRoll One', sans-serif;
+    font-size: 0.8rem;
+
+}
+
+#key-container {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+}
+
+.drum-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    margin: 0 15px;
+} 
+
+.hotkey {
+    border: 1px solid white;
+    margin-top: 1px;
+    padding: 5px 10px;
+}
+
+#img-container {
+    position: relative;
+    margin-bottom: 5px;
+    box-shadow: 0 -50px 100px 5px #838b9b;
+    border-radius: 50% 50% 0 0 ;
+    overflow: hidden;
+    
+}
+
+.triggers {
+    position: absolute;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.triggers:hover {
+    box-shadow: 0 0 25px 5px white;
+    transition: box-shadow 0.2s ease-out;
+}
+
+#clap-trigger {
+    width: 160px;
+    height: 25px;
+    top: 295px;
+    left: 82px;
+    transform: rotate(20deg);
+}
+
+#hihat-trigger {
+    width: 160px;
+    height: 25px;
+    top: 362px;
+    left: 165px;
+    transform: rotate(15deg);
+}
+
+#kick-trigger {
+    width: 250px;
+    height: 250px;
+    top: 500px;
+    left: 380px;
+}
+
+#openhat-trigger {
+    width: 215px;
+    height: 60px;
+    top: 245px;
+    left: 210px;
+    transform: rotate(10deg);
+}
+
+#ride-trigger {
+    width: 215px;
+    height: 70px;
+    top: 228px;
+    left: 585px;
+    transform: rotate(-12deg);
+}
+
+#snare-trigger {
+    width: 195px;
+    height: 85px;
+    top: 445px;
+    left: 592px;
+    border-radius: 20%;
+}
+
+#tink-trigger {
+    width: 145px;
+    height: 25px;
+    top: 325px;
+    left: 725px;
+}
+
+#tom-trigger_1 {
+    width: 145px;
+    height: 142px;
+    top: 342px;
+    left: 350px;
+    transform: rotate(5deg);
+    border-radius: 35%;
+}
+
+#tom-trigger_2 {
+    width: 135px;
+    height: 142px;
+    top: 342px;
+    left: 518px;
+    transform: rotate(-5deg);
+    border-radius: 35%;
+}
+
+.drum-glow-up {
+    box-shadow: 0 0 25px 5px white;
+    transition: box-shadow 0.1s ease-out;
+}
