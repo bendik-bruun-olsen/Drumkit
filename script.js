@@ -28,20 +28,18 @@ for (let key in hotKeys) {
     drumName.textContent = hotKeys[key].charAt(0).toUpperCase() + hotKeys[key].slice(1);
     drumKey.textContent = `${key}`;
 
-    console.log(hotKeys[key])
-
     drumHotkey.append(drumKey);
     drumItem.append(drumName, drumHotkey);
     keyContainer.append(drumItem);
 
-    drumItem.addEventListener("click", () => {
+    drumItem.addEventListener("mousedown", () => {
         playSound(key);
         drumGlow(key);
     });
 };
 
 triggerBoxes.forEach(trigger => {
-    trigger.addEventListener("click", () => {
+    trigger.addEventListener("mousedown", () => {
         const soundName = trigger.id.split("-")[0];
         const soundKey = Object.keys(hotKeys).find(key => hotKeys[key] === soundName);
         playSound(soundKey); 

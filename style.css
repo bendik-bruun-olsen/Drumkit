@@ -28,12 +28,14 @@ h1 {
 
 kbd {
     color: white;
+    user-select: none;
 }
 
 .drum-item p {
     color: rgb(231, 231, 231);
     font-family: 'RocknRoll One', sans-serif;
     font-size: 0.8rem;
+    user-select: none;
 
 }
 
@@ -65,6 +67,7 @@ kbd {
     box-shadow: 0 -50px 100px 5px #838b9b;
     border-radius: 50% 50% 0 0 ;
     overflow: hidden;
+    user-select: none;
     
 }
 
