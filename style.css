@@ -31,6 +31,15 @@ kbd {
     user-select: none;
 }
 
+#container {
+    position: relative;
+    margin-bottom: 5px;
+    box-shadow: 0 -50px 100px 5px #838b9b;
+    border-radius: 50% 50% 0 0 ;
+    overflow: hidden;
+    user-select: none;
+}
+
 .drum-item p {
     color: rgb(231, 231, 231);
     font-family: 'RocknRoll One', sans-serif;
@@ -59,16 +68,6 @@ kbd {
     border: 1px solid white;
     margin-top: 1px;
     padding: 5px 10px;
-}
-
-#img-container {
-    position: relative;
-    margin-bottom: 5px;
-    box-shadow: 0 -50px 100px 5px #838b9b;
-    border-radius: 50% 50% 0 0 ;
-    overflow: hidden;
-    user-select: none;
-    
 }
 
 .triggers {
